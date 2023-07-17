@@ -1,0 +1,81 @@
+body {
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+}
+
+h1 {
+    font-size: 2em;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.5em;
+}
+
+section {
+    padding: 0.5em;
+}
+
+section article {
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    margin: 0.5em;
+}
+
+section article img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+section article h2 {
+    text-align: center;
+    font-size: 1.6em;
+    color: blueviolet;
+    margin-top: 0.5em;
+}
+
+section article p {
+    padding: 0.5em;
+    text-align: justify;
+    color: grey;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+footer p {
+    font-size: 0.9em;
+    text-align: center;
+    color: whitesmoke;
+    padding: 0.5em;
+}
+
+/*Agora que nosso layout para mobile está pronto vamos mudar as configurações para
+tela maiores: 768px, 960px e 1024px.*/
+
+@media screen and (min-width: 768px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    section {
+        width: 1000px;
+        margin: auto;
+    }
+    
+}
